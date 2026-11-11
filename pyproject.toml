@@ -1,0 +1,29 @@
+[project]
+name = "nonebot-plugin-fishdraw"
+version = "0.1.0"
+description = "本地 ComfyUI 画图（Qwen-Image turbo）：/画图 文生图 · 以图生图 · 换装局部重绘 · 画风模板 · 配色锁（nonebot2）"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "173ababah" }]
+keywords = ["nonebot2", "nonebot-plugin", "comfyui", "text2image", "qwen-image", "inpaint"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Framework :: Nonebot2",
+  "License :: OSI Approved :: MIT License",
+]
+dependencies = ["nonebot2>=2.0.0", "httpx>=0.24"]
+
+[project.optional-dependencies]
+skin = ["numpy>=1.21", "pillow>=9.0"]
+dev = ["pytest>=7.0"]
+
+[project.urls]
+Homepage = "https://github.com/173ababah/nonebot-plugin-fishdraw"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
